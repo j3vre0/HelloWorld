@@ -1,23 +1,59 @@
-
-
-
-
-title {
-    background-color: black;
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
 h1 {
+    margin-top: 0px;
+    width: 100%;
+    height: 75px;
     color: aliceblue;
     text-align: center;
     background-color: black;
-    
+    display: flex;
+    align-items: center;
+    /* Centrado vertical */
 
+    justify-content: center;
+    /* Centrado horizontal */
 }
 
 body {
-    margin: 0;
-    background-image: url("images/cyberfondo.jpg");
-    background-position: center;
-    background-size:cover;
 
+    /*background: #e0dfa0; /* Grises suaves, no blancos puros */
+    /*color: #2d3748; /* Texto oscuro pero no negro puro */
+    /*border: 1px solid #e2e8f0; /* Bordes sutiles */
+
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(16, 14, 14, 0.064), rgb(39, 36, 36));
+    min-height: 100vh;
+    background-attachment: fixed;
+    /* Evitar que se repita al hacer scroll el gradiente de color*/
+}
+
+h2 {
+    margin: 20px;
+}
+
+p {
+    margin: 20px;
+
+    column-count: 1;
+    column-width: 300px;
+    column-gap: 20px;
+    column-fill: balance;
+    text-align: justify;
+
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-weight: 400;
+    /* Peso medio, no demasiado fino/grueso */
+    letter-spacing: 0.02em;
+    /* Espaciado de letras sutil */
+    text-rendering: optimizeLegibility;
+
+}
+
+footer{
+    margin: 0px;
 }
